@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/msa-nasa-projectapi/apis/msa-nasa-project",
+      "type": "apis.azure"
+    },
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/msa-nasa-project/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsSqlServer_FD8B319196",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/msa-nasa-databse/databases/msa-nasa-database",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:SqlServer",
+      "dynamicId": null
+    }
+  }
+}
