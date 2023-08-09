@@ -5,31 +5,44 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Users": {
+    "/api/Images/{userID}": {
       "get": {
         "tags": [
-          "Users"
+          "Images"
         ],
         "produces": [
           "text/plain",
           "application/json",
           "text/json"
         ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "userID",
+            "required": true,
+            "type": "string"
+          }
+        ],
         "responses": {
           "200": {
             "description": "Success",
             "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/Users"
-              }
+              "$ref": "#/definitions/Images"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
             }
           }
         }
-      },
+      }
+    },
+    "/api/Images": {
       "post": {
         "tags": [
-          "Users"
+          "Images"
         ],
         "consumes": [
           "application/json",
@@ -41,7 +54,7 @@
             "in": "body",
             "name": "body",
             "schema": {
-              "$ref": "#/definitions/Users"
+              "$ref": "#/definitions/Images"
             }
           }
         ],
@@ -50,9 +63,44 @@
             "description": "Created"
           }
         }
+      },
+      "delete": {
+        "tags": [
+          "Images"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Images"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
       }
     },
-    "/api/Users/{email}": {
+    "/api/Users/{name}": {
       "get": {
         "tags": [
           "Users"
@@ -65,7 +113,7 @@
         "parameters": [
           {
             "in": "path",
-            "name": "email",
+            "name": "name",
             "required": true,
             "type": "string"
           }
@@ -97,7 +145,7 @@
         "parameters": [
           {
             "in": "path",
-            "name": "email",
+            "name": "name",
             "required": true,
             "type": "string"
           }
@@ -114,9 +162,94 @@
           }
         }
       }
+    },
+    "/api/Users": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/api/Users/login": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "definitions": {
+    "Images": {
+      "required": [
+        "description",
+        "id",
+        "image",
+        "title",
+        "userID"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "image": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "title": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "userID": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
     "ProblemDetails": {
       "type": "object",
       "properties": {
@@ -161,7 +294,8 @@
           "format": "date-time",
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     }
   }
 }

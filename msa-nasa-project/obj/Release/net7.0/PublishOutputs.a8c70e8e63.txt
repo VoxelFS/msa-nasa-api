@@ -7,12 +7,14 @@ C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Azure.Core.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Azure.Identity.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\System.Web.Cors.dll
+C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.Identity.Client.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.IdentityModel.Abstractions.dll
@@ -24,6 +26,9 @@ C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.OpenApi.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.SqlServer.Server.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
+C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Scrutor.dll
+C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.Filters.Abstractions.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Owen\Documents\apis\msa-nasa-project\msa-nasa-project\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
